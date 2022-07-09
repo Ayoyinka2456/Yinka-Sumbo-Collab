@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Dashboard, UI/UX, Front-end development, webdesign">
+    <meta name="description" content="This is a Front-End design of a Dashboard Using HTML, Tailwind">
+    <meta name="author" content="Ayoyinka">
+
+    <link rel="stylesheet" href="../fontawesome-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.1.1-web (1)/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Dashboard Design</title>
+</head>
+
+
+<body class="w-screen overflow-x-hidden">
+    
+    <div class="flex flex-row w-screen">
+
+
+        <!--Side Menu  display: flex , flex-direction:column-->
+        <div class=" hidden p-2.5 bg-[#2184A4] text-white block w-[300px] md:block">
+            <div class="mb-8">
+                <!--Company Logo-->
+
+                <a href="" class="flex flex-row items-center justify-center">
+                    <!-- <i class="fas fa-alicorn" ></i> -->
+                    <p class="text-2xl mr-2 font-bold">$$</p>
+                    <p class="font-bold">LOGO</p>
+                </a>
+            </div>
+            
+            <!--Menu Lists Here-->
+            <div class="w-90% rounded-md mb-2  pr-2 pl-2 pt-2 pb-2 justify-start flex align-middle hover:bg-[#055D79]">
+                <a href="" class="flex flex-row items-center">
+                    <i class="fas fa-home mr-4 text-[16px]"></i>
+                    <p class="text-[16px] p-0 m-0">Home</p>
+                </a>
+            </div>
+
+            <div  class="w-90% rounded-md mb-2  pr-2 pl-2 pt-2 pb-2 justify-start flex align-mibg-[#055D79]">
+                <a href="" class="flex flex-row items-center">
+                    <i class="fas fa-history mr-4 text-[16px]"></i>
+                    <p class="text-[16px] p-0 m-0">History</p>
+                </a>
+                
+            </div>
+
+            <div  class="w-90% rounded-md mb-2  pr-2 pl-2 pt-2 pb-2 justify-start flex align-middle hover:bg-[#055D79]">
+                <a href="" class="flex flex-row items-center">
+                    <i class="fas fa-home mr-4 text-[16px]"></i>
+                    <p class="text-[16px] p-0 m-0">Balances</p>
+                </a>
+            </div>
+
+            <div  class="w-90% rounded-md mb-2  pr-2 pl-2 pt-2 pb-2 justify-start flex align-middle hover:bg-[#055D79]">
+                <a href="" class="flex flex-row items-center">
+                    <i class="fas fa-home mr-4 text-[16px]"></i>
+                    <p class="text-[16px] p-0 m-0">Cards</p>
+                </a>
+            </div>
+
+            <div  class="w-90% rounded-md mb-2  pr-2 pl-2 pt-2 pb-2 justify-start flex align-middle hover:bg-[#055D79]">
+                <a href="" class="flex flex-row items-center">
+                    <i class="fas fa-home mr-4 text-[16px]"></i>
+                    <p class="text-[16px] p-0 m-0">Recipients</p>
+                </a>
+            </div>
+
+            <div  class="w-90% rounded-md mb-2  pr-2 pl-2 pt-2 pb-2 justify-start flex align-middle hover:bg-[#055D79]">
+                <a href="" class="flex flex-row items-center">
+                    <i class="fas fa-home mr-4 text-[16px]"></i>
+                    <p class="text-[16px] p-0 m-0">Reports</p>
+                </a>
+            </div>
+
+            <hr>
+
+            <!--Settings,  Signout etc-->
+
+            <div  class="w-90% rounded-md mb-2  mt-2 pr-2 pl-2 pt-2 pb-2 justify-start flex align-middle hover:bg-[#055D79]">
+                <a href="" class="flex flex-row items-center">
+                    <i class="fas fa-home mr-4 text-[16px]"></i>
+                    <p class="text-[16px] p-0 m-0">Settings</p>
+                </a>
+            </div>
+
+            <div  class="w-90% rounded-md mb-2  pr-2 pl-2 pt-2 pb-2 justify-start flex align-middle hover:bg-[#055D79]">
+                <a href="" class="flex flex-row items-center">
+                    <i class="fas fa-home mr-4 text-[16px]"></i>
+                    <p class="text-[16px] p-0 m-0">Help</p>
+                </a>
+            </div>
+
+            <div  class="w-90% rounded-md mb-2  pr-2 pl-2 pt-2 pb-2 justify-start flex align-middle hover:bg-[#055D79]">
+                <a href="" class="flex flex-row items-center">
+                    <i class="fas fa-home mr-4 text-[16px]"></i>
+                    <p class="text-[16px] p-0 m-0">Privacy</p>
+                </a>
+            </div>
+        </div>
+        <!--End of Side Bar-->
+
+        <!--Beginning of Dashboard area-->
+        <div class=" flex flex-col w-[100%] relative ">
+
+            <!--Upper Dashboard-->
+            <div class=" hidden  w-[100%] bg-white border-b-[1px] border-slate-200 drop-shadow-md md:block">
+
+                <div class="flex flex-row pr-[30px] pl-[30px] pt-[25.5px] pb-[25.5px]"> <!--display:flex...row-direction-->
+
+                    <!-- Uppermost -->
+                        
+                    <div class="hidden w-[100%] h-2 justify-between md:flex flex-row">
+
+                        <div class="flex items-center justify-center">
+                            <i class="fas fa-search mr-4 text-[16px] text-[#8A8585]"></i>
+                            <div>
+                                <p class=" text-[#8A8585] text-[16px]">Search transaction</p>
+                                <hr class="border-[#8A8585]">
+                            </div>
+                        </div>
+                        
+
+                        <div class="flex flex-row items-center justify-between">
+                            
+                            <i class="fas fa-bell text-[16px]"></i>
+                            <img src="img/customer-1.jpg" alt="A missing Picture" class="w-8 h-8 rounded-full ml-6"><!--Profile Pic-->
+                            <p class="font-medium ml-6">Koinonia </p>
+                            <i class="fas fa-angle-down text-[16px] ml-6"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="hidden w-[95%] justify-center mx-auto md:block">
+
+                <div class=" flex flex-row px-[20px] py-[25.5px] justify-between items-center"> <!--row-direction-->
+
+                    <div class="flex flex-row items-center justify-between">
+
+                        <img src="img/customer-1.jpg" alt="A missing Picture" class="w-12 h-12 rounded-full mr-3"><!--Profile Pic-->
+
+                        <div class="flex flex-col"> <!--column direction-->
+                            <p class="font-bold text-2xl">Good morning, Koinonia</p> <!--Name of Individual-->
+                            
+                            <div class="flex flex-row items-center justify-between"> <!--row-direction-->
+                                <i class="fas fa-street-view text-[14px] mr-2 text-black"></i>
+                                <p class="text-[14px] mr-6 font-bold">Duke Street Studio</p>
+
+                                <i class="fas fa-user-check text-[14px] text-[#36D782] mr-2"></i>
+                                <p class="text-[14px] font-bold">Verified Account</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row">
+
+                        <div  class="flex rounded  justify-center align-middle pt-2 pb-2 pr-4 pl-4 mr-4 border-[1px] border-slate-300 bg-white hover:bg-[#055D79] text-red-600 border-[#055D79] ">
+
+                            <a href="" class="flex flex-row items-center justify-center hover:bg-[#055D79] text-white border-[#055D79]">
+                                <p class="text-[16px] text-black hover:text-white ">+ Add Money</p>
+                            </a>
+
+                        </div>
+
+                        <div  class="flex rounded bg-[#2184A4] justify-center align-middle py-2 px-4 border-[#055D79] border-[1px] justify-center align-middle hover:bg-[#055D79]">
+                            <a href="" class="flex flex-row items-center">
+                                <p class="text-[16px] text-white">Send Money</p>
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Duplicato -->
+            <nav class="flex flex-row px-[30px] py-[25.5px] items-center justify-between bg-[#2184A4] text-white relative md:hidden">
+                <i class="fas fa-search text-[18px]  "></i>
+                <a href="index.html" class="font-bold text-2xl">$$Logo</a>
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="ham-top"></span>
+                    <span class="ham-middle"></span>
+                    <span class="ham-bottom"></span>
+                </button>
+            </nav>
+            <!-- Mobile Menu -->
+            <div class="z-10 md:hidden">
+            
+                <div id="menu" class="absolute hidden flex-col items-center py-8  mt-10 font-bold self-center space-y-6 left-20 right-20 drop-shadow-md bg-[#2184A4] text-white self-end  sm:w-auto sm:self-center ">
+
+                    <a href="" class="hover:text-[#26c9ff] hover:opacity-75">Home</a>
+                    <a href="" class="hover:text-[#26c9ff] hover:opacity-75">History</a>
+                    <a href="" class="hover:text-[#26c9ff] hover:opacity-75">Balances</a>
+                    <a href=""class="hover:text-[#26c9ff] hover:opacity-75" >Cards</a>
+                    <a href="" class="hover:text-[#26c9ff] hover:opacity-75">Pecipients</a>
+                    <a href="" class="hover:text-[#26c9ff] hover:opacity-75">Report</a>
+                    <a href="" class="hover:text-[#26c9ff] hover:opacity-75">Settings</a>
+                    <a href="" class="hover:text-[#26c9ff] hover:opacity-75">Help</a>
+                    <a href="" class="hover:text-[#26c9ff] hover:opacity-75">Privacy</a>
+                </div>
+                
+            </div>
+            
+            <!-- End of Mobile Menu -->
+
+
+
+
+
+
+
+
+            <div class="flex flex-col px-[20px] py-[25.5px]  mt-[0px] justify-start  items-center relative md:hidden"> <!--row-direction-->
+
+                <div class="flex flex-col items-center justify-between">
+
+                    <img src="img/customer-1.jpg" alt="A missing Picture" class="w-30 h-30 rounded-full mr-5"><!--Profile Pic-->
+
+                    <div class="flex flex-col justify-center items-center"> <!--column direction-->
+                        <p class="font-bold text-2xl">Good morning, Koinonia</p> <!--Name of Individual-->
+                        
+                        <div class="flex flex-row items-center justify-between mx-auto my-4"> <!--row-direction-->
+
+                            <div class="flex flex-row mr-[50px]">
+                                <i class="fas fa-street-view text-[14px] mr-3 text-black"></i>
+                                <p class="text-[14px] font-bold">Duke Street Studio</p>
+                            </div>
+                            
+                            <div class="flex flex-row">
+                                <i class="fas fa-user-check text-[14px] text-[#36D782] mr-3"></i>
+                                <p class="text-[14px] font-bold">Verified Account</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-row">
+
+                    <div  class="flex rounded  justify-center align-middle pt-2 pb-2 pr-4 pl-4 mr-6 border-[1px] border-slate-300 bg-white hover:bg-[#055D79] text-red-600 border-[#055D79] ">
+
+                        <a href="" class="flex flex-row items-center justify-center hover:bg-[#055D79] text-white border-[#055D79]">
+                            <p class="text-[16px] text-black hover:text-white ">+ Add Money</p>
+                        </a>
+
+                    </div>
+
+                    <div  class="flex rounded bg-[#2184A4] justify-center align-middle pt-2 pb-2 pr-4 pl-4 border-[#055D79] border-[1px] justify-center align-middle hover:bg-[#055D79]">
+                        <a href="" class="flex flex-row items-center">
+                            <p class="text-[16px] text-white">Send Money</p>
+                        </a>
+                    </div>    
+                </div>
+            </div>
+            <!-- End of Duplicato -->
+
+            <!--End of upper section of Dashboard-->
+
+            <!--Beginning of Lower part of dashboard-->
+
+
+            <div class=" w-[100%] bg-[#F5F5F5] flex flex-col pr-[30px] pl-[30px] pt-[25.5px] pb-[25.5px]">
+                <!-- bg-[#F5F5F5] -->
+
+                <div class="flex flex-col mb-10"> <!--Overview Card section-->
+
+                    <p class="font-bold text-[24px] block mb-4">Overview</p>
+                
+                    <!--Cards -->
+                
+                    <div class="flex flex-col justify-between items-center space-y-8 md:flex-row md:space-y-0"> <!--All cards combined || row-direction-->
+                
+                        <!--Card 1-->
+                        <div class="w-[70%] drop-shadow-md md:w-[30%] md:mb-none"> <!--column--direction-->
+                            <div class="flex flex-row items-center p-2 bg-white rounded-t-md"><!--row-direction-->
+                                <i class="fas fa-file-invoice-dollar mr-5 text-[24px]"></i>
+                                <div class="flex flex-col"><!--column direction-->
+                                    <p class="text-[14px] mb-2">Account Balance</p>
+                                    <p class="font-bold">$375,658,000.00</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="block bg-[#F9F9F9] pr-3 pl-3 pb-1 pt-1  w-[100%] rounded-b-md ">
+                                <a href="#" class="hover:text-blue-200">
+                                    <p class="text-blue-500 text-[14px]">view all</p>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <!--Card 2-->
+                
+                        <div  class="w-[70%] drop-shadow-md md:w-[30%] md:mb-none"> <!--column--direction-->
+                            <div class="flex flex-row items-center p-2 bg-white rounded-t-md"><!--row-direction-->
+                                <i class="fas fa-sync mr-5 text-[24px]"></i>
+                                <div class="flex flex-col"><!--column direction-->
+                                    <p class="text-[14px] mb-2">Pending</p>
+                                    <p class="font-bold">-$3,658.00</p>
+                                </div>
+                                
+                            </div>
+                
+                            <div class="block bg-[#F9F9F9] pr-3 pl-3 pb-1 pt-1  w-[100%] rounded-b-md ">
+                                <a href="#" class="hover:text-blue-200">
+                                    <p class="text-blue-500 text-[14px]">view all</p>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <!--Card 3-->
+                
+                        <div class="w-[70%] drop-shadow-md md:w-[30%] md:mb-none"> <!--column--direction-->
+                       
+                            <div class="flex flex-row items-center p-2 bg-white rounded-t-md"><!--column direction-->
+                
+                                <i class="fa-solid fa-check-double mr-5 text-[24px]"></i>
+
+                                <div class="flex flex-col"><!--column direction-->
+                                    <p class="text-[14px] mb-2">Processed (last 30 days)</p>
+                                <p class="font-bold">$895,748.00</p>
+                                </div>
+                            </div>
+
+                            <div class="block bg-[#F9F9F9] pr-3 pl-3 pb-1 pt-1  w-[100%] rounded-b-md ">
+                                <a href="#" class="hover:text-blue-200">
+                                    <p class="text-blue-500 text-[14px]">view all</p>
+                                </a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                
+                <!--End of Overview section-->
+                
+                
+                <!--Beginning of Recent Activities-->
+                
+                <div class="flex flex-col "><!--column--direction-->
+                    <p class="font-bold text-[24px] block mb-4">Recent Activity</p>
+                
+                    <table class="justify-center border-2 mb-[100px] ">
+
+                        <thead class=" border-b-2">
+                            <tr class="bg-[#F9F9F9] uppercase h-[50px] text-[#7A7373] text-[10px] md:text-[16px] ">
+                                <th>Transaction</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                            
+                        </thead>
+                        
+                        <tbody>
+                            <tr class=" border-b-2 bg-white">
+                                <td class="p-3" >
+                                    <div class="flex flex-row items-center pl-[20px]">
+                                        <i class="fas fa-money-bill-wave text-[14px] mr-3 md:text-[16px]"></i>
+                                        <p class="text-[14px] md:text-[16px]">Payment to Molly Sanders</p>
+                                    </div>
+                                    
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">$20,000 USD</td>
+                                
+                                <td class="p-3  flex items-center justify-center">
+                                    <div class="rounded-full bg-green-300 w-[80%]">
+                                        <a href="" class="flex items-center justify-center p-1">
+                                            <span class="text-white font-bold text-green-800 text-[12px] md:text-[14px]">Success</span>
+                                        </a>
+                                    </div>
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">July 11, 2022</td>
+                    
+                            </tr>
+                    
+                    
+                            <tr class=" border-b-2 bg-white">
+                                <td class="p-3" >
+                                    <div class="flex flex-row items-center pl-[20px]">
+                                        <i class="fas fa-money-bill-wave mr-3 text-[14px] md:text-[16px]"></i>
+                                        <p class="text-[14px] md:text-[16px]">Payment to Oyin Esther</p>
+                                    </div>
+                                    
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">$105,000 USD</td>
+                                <td class="p-3  flex items-center justify-center">
+                                    <div class="rounded-full bg-yellow-300 w-[80%]">
+                                        <a href="" class="flex items-center justify-center p-1">
+                                            <span class="text-white font-bold text-yellow-800 text-[12px] px-3 md:text-[14px]">Processing</span>
+                                        </a>
+                                    </div>
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">July 11, 2022</td>
+                    
+                            </tr>
+                    
+                            <tr class=" border-b-2 bg-white">
+                                <td class="p-3" >
+                                    <div class="flex flex-row items-center pl-[20px]">
+                                        <i class="fas fa-money-bill-wave mr-3 text-[14px] md:text-[16px]"></i>
+                                        <p class="text-[14px] md:text-[16px]">Payment to Mikel Fash</p>
+                                    </div>
+                                    
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">$90,000 USD</td>
+                                <td class="p-3  flex items-center justify-center">
+                                    <div class="rounded-full bg-green-300 w-[80%]">
+                                        <a href="" class="flex items-center justify-center p-1">
+                                            <span class="text-white font-bold text-[14px]  text-green-800 text-[12px] md:text-[14px]">Success</span>
+                                        </a>
+                                    </div>
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">July 11, 2022</td>
+                    
+                            </tr>
+                    
+                            <tr class=" border-b-2 bg-white">
+                                <td class="p-3" >
+                                    <div class="flex flex-row items-center pl-[20px]">
+                                        <i class="fas fa-money-bill-wave mr-3 text-[14px] md:text-[16px]"></i>
+                                        <p class="text-[14px] md:text-[16px]">Payment to Lanre Adex</p>
+                                    </div>
+                                    
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">$25,000 USD</td>
+                                <td class="p-3  flex items-center justify-center">
+                                    <div class="rounded-full bg-green-300 w-[80%]">
+                                        <a href="" class="flex items-center justify-center p-1">
+                                            <span class="text-white font-bold text-[14px]  text-green-800 text-[12px] md:text-[14px]">Success</span>
+                                        </a>
+                                    </div>
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">July 11, 2022</td>
+                    
+                            </tr>
+                    
+                            <tr class=" border-b-2 bg-white">
+                                <td class="p-3" >
+                                    <div class="flex flex-row items-center pl-[20px]">
+                                        <i class="fas fa-money-bill-wave mr-3 text-[14px] md:text-[16px]"></i>
+                                        <p class="text-[14px] md:text-[16px]">Payment to Molly Sapa</p>
+                                    </div>
+                                    
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">$20,000 USD</td>
+                                <td class="p-3  flex items-center justify-center">
+                                    <div class="rounded-full bg-slate-300 w-[80%]">
+                                        <a href="" class="flex items-center justify-center p-1">
+                                            <span class="text-white font-bold text-[14px]  text-slate-800 text-[12px] md:text-[14px]">Failed</span>
+                                        </a>
+                                    </div>
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">July 11, 2022</td>
+                    
+                            </tr>
+                    
+                            <tr class=" border-b-2 bg-white">
+                                <td class="p-3" >
+                                    <div class="flex flex-row items-center pl-[20px]">
+                                        <i class="fas fa-money-bill-wave mr-3 text-[14px] md:text-[16px]"></i>
+                                        <p class="text-[14px] md:text-[16px]">Payment to Will Smith</p>
+                                    </div>
+                                    
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">$500 USD</td>
+                                <td class="p-3  flex items-center justify-center">
+                                    <div class="rounded-full bg-yellow-300 w-[80%]">
+                                        <a href="" class="flex items-center justify-center p-1">
+                                            <span class="text-white font-bold text-yellow-800 text-[12px] md:text-[14px]">Processing</span>
+                                        </a>
+                                    </div>
+                                </td>
+                    
+                                <td class="p-3 text-[14px] md:text-[16px]">July 11, 2022</td>
+                    
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
